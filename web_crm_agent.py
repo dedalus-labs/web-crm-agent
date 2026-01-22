@@ -29,7 +29,7 @@ x = Connection(
     name="x",
     secrets=SecretKeys(token="X_BEARER_TOKEN"),
     base_url="https://api.x.com",
-    auth_header_format="Bearer {api_key}",
+    auth_header_format="Bearer {api_key}", # *Note: The auth_header_format varies for different MCP servers. Some may not need one altogether. Remember to doublecheck the specs*
 )
 
 # SecretValues: binds actual credentials to a Connection schema.
@@ -37,7 +37,7 @@ x = Connection(
 x_secrets = SecretValues(x, token=os.getenv("X_BEARER_TOKEN", ""))
 
 async def main():
-    client = AsyncDedalus(timeout=9000) # 15 minutes (unit = seconds)
+    client = AsyncDedalus(timeout=900) # 15 minutes (unit = seconds)
     runner = DedalusRunner(client)
 
     response = runner.run(
