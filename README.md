@@ -16,6 +16,7 @@ To run this agent, you must provide your own API credentials. Create a `.env` fi
 
 # Dedalus Configuration
 DEDALUS_API_KEY=dsk_...             # Your Dedalus API key *Note: Sign up to [Dedalus Labs](https://www.dedaluslabs.ai) and navigate to your dashboard to create your API key.*
+
 DEDALUS_AS_URL=...                  # Your Authorization Server URL
 
 # X (Twitter) API Configuration
