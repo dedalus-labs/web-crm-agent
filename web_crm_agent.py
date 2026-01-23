@@ -3,10 +3,8 @@
 
 """
 Environment variables:
-    DEDALUS_API_KEY: Your Dedalus API key (dsk_*)
+    DEDALUS_API_KEY: Your Dedalus API key (dsk-*)
     DEDALUS_AS_URL=https://as.dedaluslabs.ai
-    X_API_KEY: Your Twitter API Key
-    X_API_SECRET: Your Twitter API Secret
     X_BEARER_TOKEN: Twitter Bearer Token
 """
 
@@ -25,11 +23,11 @@ name = "Jane Doe"
 x_username = "@JaneDoe"
 
 # Connection: schema for X/Twitter API
+# Note: Some providers may also require an additional "auth_header_format" parameter in Connection(). X does not.
 x = Connection(
     name="x",
     secrets=SecretKeys(token="X_BEARER_TOKEN"),
     base_url="https://api.x.com",
-    auth_header_format="Bearer {api_key}", # *Note: The auth_header_format varies for different MCP servers. Some may not need one altogether. Remember to doublecheck the specs*
 )
 
 # SecretValues: binds actual credentials to a Connection schema.
