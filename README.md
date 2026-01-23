@@ -15,12 +15,16 @@ It analyzes a target user's followers to discover "connections of connections" t
 To run this agent, you must provide your own API credentials. Create a `.env` file in the root directory with the following variables:
 
 # Dedalus Configuration
-DEDALUS_API_KEY=dsk_...             # Your Dedalus API key *Note: Sign up to [Dedalus Labs](https://www.dedaluslabs.ai) and navigate to your dashboard to create your API key.*
+DEDALUS_API_KEY=dsk_...             # Your Dedalus API key 
+
+*Note: Sign up to [Dedalus Labs](https://www.dedaluslabs.ai) and navigate to your dashboard to create your API key.*
 
 DEDALUS_AS_URL=...                  # Your Authorization Server URL
 
 # X (Twitter) API Configuration
-X_BEARER_TOKEN=...                  # Your X API Bearer Token *Note: You can acquire an X Bearer Token by creating a project at [developer.x.com](https://developer.x.com).*
+X_BEARER_TOKEN=...                  # Your X API Bearer Token 
+
+*Note: You can acquire an X Bearer Token by creating a project at [developer.x.com](https://developer.x.com).*
 
 ## Experimentation and Prompt Engineering
 
