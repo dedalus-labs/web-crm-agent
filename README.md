@@ -34,6 +34,19 @@ This implementation is a starting point. To get the most out of your agent, keep
 -   **Model Selection**: Different models (e.g., Opus 4.5 vs. GPT-5.2) have varying capabilities for tool use and reasoning. Experiment to find the best balance of speed and intelligence for your use case.
 -   **Tooling**: You can swap or add MCP servers (like LinkedIn search or specialized databases) to enrich the research process further. Feel free to explore **[Dedalus' Marketplace](https://www.dedaluslabs.ai/marketplace)** for MCP servers you can easily connect in one line of code.
 
+## Setup
+
+1.  Create a virtual environment (recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 ## Usage
 
 1.  Set your environment variables in `.env`.
